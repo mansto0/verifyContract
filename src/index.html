@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Verify app</title>
+
+</head>
+
+<body>
+
+<div>
+
+	<input id="caseno" class="details" placeholder="Enter case number" type="text" /></br>
+	<input id="location" class="details" placeholder="Enter crime location" type="text" /></br>
+	<button type="submit" onclick="App.addDetails()" class="detailsSubmit Submit">Add</button>
+	<!-- <button type="button" onclick="upload()">Upload</button> -->
+</div>
+
+<script>
+
+/*function upload() {
+            const reader = new FileReader();
+            
+            reader.onloadend = function () {
+
+                const ipfs = window.IpfsApi('localhost', 5001)   // Connect to IPFS
+                const buf = buffer.Buffer(reader.result)    // Convert data into buffer
+                ipfs.files.add(buf, (err, result) => {   // Upload buffer to IPFS
+                    if (err) {
+                        console.error(err)
+                        return
+                    }
+                    console.log("result is", result);
+                    let url = "https://gateway.ipfs.io/ipfs/" + result[0].hash;
+                    console.log("Url -->", url);
+                    document.getElementById("url").innerHTML = url
+                    document.getElementById("url").href = url
+                    document.getElementById("output").src = url
+                })
+            }
+}*/
+
+</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
